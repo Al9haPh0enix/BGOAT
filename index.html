@@ -6,10 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Biggest game updates of all time!</title>
     </head>
+    <style>
+        audio{
+            --opacity: 0%;
+            position: absolute;
+            top: 0x;
+            left: 0px;
+        }
+    </style>
+    <script>
+        function acceptedCookies(){
+            var audio = new Audio('hth.mp3');
+            audio.play();
+        }
+    </script>
     <body>
-        <button>Accept cookies</button>
-        <audio controls autoplay style="opacity: 0%;">
-            <source src="hth.mp3" type="audio/mpeg">
-        </audio>
+        <button id="accept" onClick="acceptedCookies()">Accept cookies</button>
     </body>
 </html>
